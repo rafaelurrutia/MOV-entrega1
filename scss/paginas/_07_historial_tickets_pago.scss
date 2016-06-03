@@ -1,0 +1,163 @@
+.container.historial-tickets-pago {
+    max-width: 1200px;
+    form {
+        width: 100%;
+        max-width: 995px;
+        text-align: center;
+    }
+    ul.numero-venta {
+        background: #DDE4EB;
+        @include table(100%, 73px, middle);
+        margin-bottom: 0;
+        padding: 12px 1% 14px 3.5%;
+        position: relative;
+        list-style-type: none;
+        &:after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 9%;
+            width: 0;
+            height: 0;
+            margin-left: -15px;
+            border-top: solid 10px #DDE4EB;
+            border-left: solid 15px transparent;
+            border-right: solid 15px transparent;
+        }
+        li {
+            span {
+                display: block;
+                @include text-properties($roboto-bold, #656C77, 16.53px, 100%, normal, null);
+                margin-bottom: 8px;
+            }
+            p {
+                margin-bottom: 3px;
+                @include text-properties($roboto-light, #656C77, 16.53px, 100%, normal, null);
+                strong {
+                    @include text-properties($roboto-bold, #656C77, 16.53px, 100%, 700, null);
+                    margin-left: 4px;
+                }
+            }
+        }
+    }
+    .caja-mensaje {
+        padding: 40px 10% 45px 10%;
+        h5 {
+            text-align: left;
+            @include text-properties($roboto-bold, #005B83, 20.22px, 120%, 700, null);
+        }
+        table {
+            thead {
+                @include text-properties($roboto-light, #8F8F9D, 13px, 120%, 300, null);
+                th {
+                    text-align: center;
+                }
+                th.active {
+                    @include text-properties($roboto-bold, #5B9BF9, 13px, 120%, 300, null);
+                }
+            }
+            tbody {
+                @include text-properties($roboto-light, #8F8F9D, 13px, 120%, 300, null);
+                text-align: center;
+            }
+            td:nth-child(1) {
+                width: 134px;
+            }
+            td:nth-child(2) {
+                width: 130px;
+            }
+            td:nth-child(3) {
+                width: 130px;
+            }
+            td:nth-child(4) {
+                width: 130px;
+            }
+            td:nth-child(5) {
+                width: 265px;
+            }
+            tr:nth-child(even) {
+                background-color: #ecf0f6;
+            }
+        }
+        table.tickets-vigentes {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 25px;
+            margin-bottom: 46px;
+            tr {
+                height: 46px;
+            }
+            td {
+                border: 1px solid #D7DDE6;
+            }
+            tr:nth-child(even) {
+                background-color: #ecf0f6;
+            }
+            @media #{$mobile} {
+                margin-bottom: 30px;
+            }
+        }
+        table.tickets-pagados {
+            width: 100%;
+            text-align: left;
+            border-collapse: collapse;
+            margin-top: 27px;
+            margin-bottom: 35px;
+            tr {
+                height: 46px;
+            }
+            td {
+                border: 1px solid #D7DDE6;
+            }
+            td:nth-child(1) {}
+            td:nth-child(2) {}
+            tr:nth-child(even) {
+                background-color: #ecf0f6;
+            }
+        }
+        @media #{$mobile} {
+            table {
+                border: 0;
+            }
+            table thead {
+                display: none;
+            }
+            table tr {
+                margin-bottom: 10px;
+                display: block;
+                height: auto !important;
+                padding-top: 10px;
+            }
+            table td {
+                display: block;
+                text-align: right;
+                font-size: 13px;
+                border: none !important;
+                width: 100% !important;
+                font-family: $roboto-bold;
+                height: 25px;
+                padding: 0 4%;
+            }
+            table td:last-child:before {
+                content: "";
+            }
+            table td:last-child {
+                text-align: center;
+            }
+            table td:last-child {
+                border-bottom: 0;
+            }
+            table td:before {
+                content: attr(data-label);
+                float: left;
+                text-align: left;
+                font-weight: bold;
+                width: 49%;
+                font-family: $roboto-light;
+            }
+            table tr:nth-child(even) {
+                background: #ecf0f6;
+            }
+        } // table responsive
+    }
+}

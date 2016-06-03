@@ -1,0 +1,488 @@
+.container.comprobante-exito2-enviado {
+    max-width: 1200px;
+    form {
+        width: 100%;
+        max-width: 1000px;
+        text-align: center;
+    }
+    div.contenido {
+        width: 100%;
+        max-width: 1000px;
+        text-align: center;
+    }
+    .iconp-documentos {
+        left: 83px;
+    }
+    .iconp-tarjeta {
+        left: 104px;
+    }
+    .iconp-documento {
+        left: 107px;
+    }
+    .cont-comprobante-ticket {
+        margin: 0 auto;
+        float: none;
+        text-align: center;
+        background-color: #FFF;
+        //padding: 12px 17% 39px 17%;
+        width: 100%;
+        @media #{$mobile} {
+            padding: 0 5%;
+            background: #ecf0f6;
+        }
+        p {
+            margin: 0;
+            padding: 0;
+            @include text-properties($roboto-light, #656D77, 13px, 120%, 300, null);
+            @media #{$mobile} {
+                margin-bottom: 25px;
+                padding: 0px 25px;
+            }
+        }
+        .no-direccion {
+            margin: 0 auto;
+            min-height: 96px;
+            border: 1px solid #A8CF37;
+            margin-bottom: 50px;
+            box-sizing: border-box;
+            height: auto;
+            margin-top: 40px;
+            min-height: inherit;
+            height: auto;
+            //padding: 0px 12% 57px 12%;
+            padding: 0px 10% 33px 10%;
+            text-align: center;
+            max-width: 794px;
+            width: 100%;
+            @media #{$mobile} {
+                margin-top: 16px;
+                min-height: inherit;
+                height: auto;
+                padding: 0px 30px 0px 30px;
+                border: 1px solid #A8CF37;
+                text-align: center;
+            }
+            .cont-icon-advertencia {
+                background-image: url(../pago/img/img-cuenta-pagada-exitosamente.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                @include vendor-prefix(background-size, cover);
+                @include size(40px, 40px);
+                vertical-align: top;
+                margin-top: 9px;
+                background: #fff;
+                border-radius: 40.5px 40.5px 0px 0px;
+                height: 30px;
+                margin: -30px auto 0;
+                padding: 5px;
+                width: 60px;
+                display: block;
+                border-style: solid;
+                border-width: 1px 1px 0 1px;
+                border-color: #A8CF37;
+                @media #{$mobile} {
+                    background: #fff;
+                    //border-radius: 40.5px 40.5px 0px 0px;
+                    border-radius: 42.5px 42.5px 0px 0px;
+                    padding: 5px;
+                    display: block;
+                    border-style: solid;
+                    border-width: 1px 1px 0 1px;
+                    border-color: #A8CF37;
+                    height: 25px;
+                    margin: -25px auto 0;
+                    padding: 5px;
+                    width: 50px;
+                }
+            }
+            .cobro-a-tu-cuenta {
+                background-color: #F0F4F4;
+                width: 100%;
+                //max-width: 592px;
+                min-height: 47px;
+                margin: 0 auto;
+                text-align: left;
+                padding: 12px 3%;
+                display: inline-block;
+                @media #{$mobile} {
+                    //padding-top: 15.5px;
+                    padding-top: 22px;
+                    padding-bottom: 22px;
+                }
+                i {
+                    font-size: 24px;
+                    color: #5c9bfa;
+                    width: 25px;
+                    float: left;
+                    position: relative;
+                    top: -3px;
+                    margin-right: 5px;
+                    @media #{$mobile} {
+                        font-size: 25px;
+                        width: 25px;
+                        margin-top: 5.5px;
+                        margin-left: 9px;
+                        margin-right: 9px;
+                    }
+                }
+                p {
+                    float: left;
+                    width: calc(100% - 40px);
+                    margin-left: 6px;
+                    @include text-properties($roboto-light, #5a5b6b, 12px, 120%, 300, null);
+                    @media #{$mobile} {
+                        font-size: 14px;
+                        width: calc(100% - 66px);
+                        padding: 0;
+                        color: #78808A;
+                        line-height: 16.5px;
+                        margin-bottom: 0;
+                        //margin-bottom: 15.5px;
+                    }
+                }
+            }
+            .icon-advertencia {
+                @include size(40px, 40px);
+                margin-top: 6px;
+                @media #{$mobile} {
+                    @include size(37px, 37px);
+                }
+            }
+            .texto {
+                margin-top: 47px;
+                text-align: center;
+                display: block;
+                @media #{$mobile} {
+                    margin: 37px 0px 0px 0px;
+                    text-align: center;
+                }
+                h4 {
+                    @include text-properties($movistar-headline-bold, #005c84, 24.31px, 120%, 700, null);
+                    @media #{$mobile} {
+                        margin-bottom: 17px;
+                        font-size: 17.72px;
+                    }
+                }
+            }
+            .enviaComprobante {
+                margin-top: 23px;
+                @media #{$mobile} {
+                    margin-top: 20px;
+                    width: 100%;
+                }
+                p {
+                    text-align: left;
+                    margin-left: 2px;
+                    @media #{$mobile} {
+                        font-size: 14px;
+                        padding: 0 4px;
+                        text-align: left;
+                    }
+                }
+                // 3 c exitoso
+                .form-enviaComprobante {
+                    margin-top: 4px;
+                    @media #{$mobile} {
+                        text-align: left;
+                    }
+                    input[type="text"] {
+                        @include size(404px, 46px);
+                        @media #{$mobile} {
+                            @include size(59%, 51px);
+                            margin-top: 0px;
+                            font-size: 13px;
+                        }
+                    }
+                    button {
+                        @include size(186px, 46px);
+                        padding: 0;
+                        margin-left: -4px;
+                        background-color: #0077a0;
+                        @media #{$mobile} {
+                            @include size(41%, 51px);
+                            margin-top: 0px;
+                            font-size: 13px;
+                        }
+                    }
+                }
+                // 3 enviado
+                .envioexitoso {
+                    margin-top: 10px;
+                    width: 100%;
+                    min-height: 45px;
+                    background-color: #F1F5F5;
+                    text-align: left;
+                    padding: 0 3%;
+                    @media #{$mobile} {
+                        padding-top: 4%;
+                        padding-bottom: 4%;
+                    }
+                    i,
+                    span,
+                    a {
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+                    span {
+                        @include text-properties($roboto-light, #656D77, 14px, 120%, 300, null);
+                        width: calc(100% - 140px);
+                    }
+                    i {
+                        font-size: 26px;
+                        color: #A8CF37;
+                        width: 33.75px;
+                    }
+                    a {
+                        @include text-properties($roboto-bold, #5c9bfa, 11.39px, 3.53846em, 700, null);
+                        margin-left: 8px;
+                        width: 90px;
+                        &:hover {
+                            text-decoration: underline !important;
+                        }
+                        i {
+                            font-size: 22px;
+                            color: #5c9bfa;
+                            margin-left: 8px;
+                        }
+                    }
+                }
+                // 3 fallado
+                .enviofallado {
+                    margin-top: 10px;
+                    width: 100%;
+                    min-height: 45px;
+                    background-color: #F1F5F5;
+                    text-align: left;
+                    padding: 0 3%;
+                    @media #{$mobile} {
+                        padding-top: 4%;
+                        padding-bottom: 4%;
+                    }
+                    i,
+                    span,
+                    a {
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+                    span {
+                        @include text-properties($roboto-light, #656D77, 14px, 120%, 300, null);
+                        width: calc(100% - 140px);
+                    }
+                    i {
+                        font-size: 26px;
+                        color: #e04857;
+                        width: 33.75px;
+                    }
+                    a {
+                        @include text-properties($roboto-bold, #5c9bfa, 11.39px, 3.53846em, 700, null);
+                        margin-left: 8px;
+                        width: 90px;
+                        &:hover {
+                            text-decoration: underline !important;
+                        }
+                        i {
+                            font-size: 22px;
+                            color: #5c9bfa;
+                            margin-left: 8px;
+                        }
+                    }
+                }
+            }
+            .obien {
+                display: block;
+                margin: 12px 0px;
+                h5 {
+                    @include text-properties($roboto-bold, #525964, 11px, 120%, 700, null);
+                    text-align: center;
+                    border-bottom: 1px dashed #CCC;
+                    position: relative;
+                    @media #{$mobile} {
+                        @include text-properties($roboto-light, #525964, 12px, 120%, 700, null);
+                    }
+                }
+                h5 span {
+                    background-color: white;
+                    position: relative;
+                    top: 8px;
+                    padding: 0 12px;
+                    @media #{$mobile} {
+                        top: 7px;
+                    }
+                }
+            }
+            strong {
+                @include text-properties('RobotoBold', #656D78, 13px, 120%, 400, null);
+            }
+            .cont-boton {
+                vertical-align: top;
+                margin-top: 15px;
+                width: 100%;
+  /*
+                @media #{$mobile} {
+                    display: block;
+                    width: 100%;
+                    max-width: inherit;
+                    margin-top: 25px;
+                    display: inline-block;
+                }
+*/
+                @media (max-width: 600px) {
+                    display: block;
+                    width: 100%;
+                    max-width: inherit;
+                    margin-top: 25px;
+                    display: inline-block;
+                }
+                .cont-btn {
+                    width: 49.25%;
+                    max-width: 285px;
+                    @media (max-width: 600px) {
+                        display: block;
+                        width: 100%;
+                        max-width: inherit;
+                    }
+                    &.width-1 {
+                        max-width: 287px;
+                        @media (max-width: 600px) {
+                            display: block;
+                            width: 100%;
+                            max-width: inherit;
+                            margin-top: 20px;
+                        }
+                    }
+                    .btn2 {
+                        padding: 0px 23px 0px 14px;
+                        text-align: left;
+                        font-family: "RobotoBold";
+                        font-size: 11.39px;
+                        @media (max-width: 600px) {
+                            padding-right: 8px;
+                        }
+                        &:after {
+                            display: none;
+                            //right: 28px;
+                        }
+                        i {
+                            &.iconp-descargar {
+                                font-size: 19px;
+                                margin-left: 11px;
+                                margin-right: 18px;
+                                position: relative;
+                                top: 3px;
+                            }
+                            &.iconp-imprimir {
+                                font-size: 19px;
+                                margin-left: 15px;
+                                margin-right: 16px;
+                                position: relative;
+                                top: 4px;
+                            }
+                        }
+                    }
+                }
+            }
+            p.detalle-transaccion {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                text-align: left;
+                @include text-properties($roboto-light, #656D77, 13px, 120%, 300, null);
+                margin-top: 40px;
+                margin-bottom: 20px;
+                @media #{$mobile} {
+                    font-size: 14px;
+                    padding: 0 2px;
+                    text-align: left;
+                    margin-left: 17.5px;
+                    margin-top: 25px;
+                    margin-bottom: 17.5px;
+                }
+            }
+            table.detalle-transaccion {
+                width: 100%;
+                @include text-properties($roboto-light, #656D77, 13px, 120%, 300, null);
+                text-align: left;
+                border-collapse: collapse;
+                position: relative;
+                @media #{$mobile} {
+                    font-size: 14px;
+                }
+                tr {
+                    height: 47px;
+                    @media #{$mobile} {}
+                }
+                td {
+                    border: 1px solid #D7DDE6;
+                }
+                td:nth-child(1) {
+                    padding-left: 6%;
+                    width: 59%;
+                    @media #{$mobile} {
+                        padding-left: 7%;
+                    }
+                }
+                td:nth-child(2) {
+                    @include text-properties($roboto-bold, #656D77, 13px, 120%, 300, null);
+                    padding-left: 10%;
+                    width: 41%;
+                    @media #{$mobile} {
+                        font-size: 14px;
+                        padding-left: 7%;
+                    }
+                }
+                tr:nth-child(even) {
+                    background-color: #ecf0f6;
+                }
+            }
+            table.detalle-transaccion.comprobante:after {
+                content: "";
+                position: absolute;
+                width: 119px;
+                height: 128px;
+                bottom: 0px;
+                right: 0px;
+                background-image: url("../pago/img/timbre_movistar.png");
+                background-repeat: no-repeat;
+                background-position: center;
+                @media #{$mobile} {
+                    width: 41px;
+                    height: 128px;
+                    bottom: 0px;
+                    right: 0px;
+                    background-image: url("../pago/img/timbre_movistar_mobile.png");
+                }
+            }
+            .cont-recuerda {
+                display: inline-block;
+                margin-top: 43px;
+                margin-left: 1px;
+                text-align: center;
+                @media #{$mobile} {
+                    text-align: left;
+                    margin-top: 15px;
+                }
+                p {
+                    line-height: 24px;
+                    @media #{$mobile} {
+                        font-size: 14px;
+                        padding: 0px 20px;
+                    }
+                }
+            }
+            h5.width-100 {
+                margin-top: 20px;
+                @include text-properties($roboto-bold,
+                #005A83,
+                20.78px,
+                120%,
+                300,
+                null);
+                @media #{$mobile} {
+                    font-size: 15px;
+                    margin-top: 3.5px;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}

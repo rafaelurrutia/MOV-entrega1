@@ -1,0 +1,86 @@
+.caja-mensaje {
+    padding: 40px 0 45px 0;
+    @media #{$mobile} {
+        width: 100%;
+        padding: 30px 5% 35px 5%;
+    }
+    .cont-caja-mensaje {
+        background-color: #f1f5f5;
+        width: 100%;
+        max-width: 589px;
+        min-height: 71px;
+        margin: 0 auto;
+        text-align: left;
+        padding: 6px 4%;
+        @media #{$mobile} {
+            border: 1px solid #ccc;
+            padding: 13px 3% 13px 3%;
+        }
+        i {
+            font-size: 36px;
+            color: #5c9bfa;
+            width: 40px;
+            float: left;
+            position: relative;
+            top: 15px;
+            @media #{$mobile} {
+                font-size: 25px;
+                top: 25px;
+                width: 38px;
+            }
+        }
+        .texto {
+            float: left;
+            width: calc(100% - 80px);
+            margin-left: 29px;
+            @media #{$mobile} {
+                margin-left: 0;
+                width: calc(100% - 40px);
+            }
+        }
+        h5 {
+            @include text-properties($roboto-bold, #656d78, 17px, 120%, 700, null);
+            @media #{$mobile} {
+                font-size: 15px;
+            }
+        }
+        p {
+            @include text-properties($roboto-light, #5a5b6b, 13px, 120%, 300, null);
+            @media #{$mobile} {
+                font-size: 13px;
+            }
+        }
+    }
+    .cont-button {
+        margin: 0 auto;
+        margin-top: 55px;
+        width: 185px;
+        @media (max-width: 350px) {
+            width: 100%;
+            padding: 10px 1% 0 1%;
+            margin-top: 20px;
+        }
+        button {
+            width: 100%;
+            text-align: center;
+            @media #{$mobile} {
+                
+            }
+            img {
+                @media #{$mobile} {
+                  //  width: 42px;
+                //    margin-left: 16px;
+                //    margin-right: 20px;
+                }
+            }
+            span {
+                @media #{$mobile} {
+                    
+                }
+            }
+        }
+        button:after {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,256 @@
+.container.comprobante-fallido {
+    max-width: 1200px;
+    form {
+        width: 100%;
+        max-width: 1000px;
+        text-align: center;
+    }
+    div.contenido {
+        width: 100%;
+        max-width: 1000px;
+        text-align: center;
+    }
+    .iconp-documentos {
+        left: 83px;
+    }
+    .iconp-tarjeta {
+        left: 104px;
+    }
+    .iconp-documento {
+        left: 107px;
+    }
+    .cont-comprobante-ticket {
+        margin: 0 auto;
+        float: none;
+        text-align: center;
+        background-color: #FFF;
+        //padding: 12px 17% 39px 17%;
+        width: 100%;
+        @media #{$mobile} {
+            padding: 0 5%;
+            background: #ecf0f6;
+        }
+        p {
+            margin: 0;
+            padding: 0;
+            @include text-properties($roboto-light, #656D77, 13px, 120%, 300, null);
+            @media #{$mobile} {
+                margin-bottom: 25px;
+                padding: 0px 25px;
+            }
+        }
+        .no-direccion {
+            margin: 0 auto;
+            min-height: 96px;
+            border: 1px solid #FDB512;
+            margin-bottom: 50px;
+            box-sizing: border-box;
+            height: auto;
+            margin-top: 40px;
+            min-height: inherit;
+            height: auto;
+            //padding: 0px 12% 57px 12%;
+            padding: 0px 8% 46px 8%;
+            text-align: center;
+            max-width: 794px;
+            width: 100%;
+            @media #{$mobile} {
+                margin-top: 16px;
+                margin-bottom: 20px;
+                min-height: inherit;
+                height: auto;
+                padding: 0px 16px 0px 20px;
+                border: 1px solid #FDB512;
+                text-align: center;
+            }
+            .cont-icon-advertencia {
+                background-image: url(../pago/img/img-cuenta-pagada-exitosamente.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                @include vendor-prefix(background-size, cover);
+                @include size(40px, 40px);
+                vertical-align: top;
+                margin-top: 9px;
+                background: #fff;
+                border-radius: 40.5px 40.5px 0px 0px;
+                height: 30px;
+                margin: -30px auto 0;
+                padding: 5px;
+                width: 60px;
+                display: block;
+                border-style: solid;
+                border-width: 1px 1px 0 1px;
+                border-color: #FDB512;
+                
+                @media #{$mobile} {
+                    background: #fff;
+                    //border-radius: 40.5px 40.5px 0px 0px;
+                    border-radius: 42.5px 42.5px 0px 0px;
+                    padding: 5px;
+                    display: block;
+                    border-style: solid;
+                    border-width: 1px 1px 0 1px;
+                    border-color: #FDB512;
+                    height: 25px;
+                    margin: -25px auto 0;
+                    padding: 5px;
+                    width: 50px;
+                }
+            }
+            .icon-advertencia {
+                @include size(40px, 40px);
+                margin-top: 6px;
+                @media #{$mobile} {
+                    @include size(30.5px, 30.5px);
+                }
+            }
+            .texto {
+                margin-top: 43px;
+                text-align: center;
+                display: block;
+                @media #{$mobile} {
+                    margin: 33px 0px 0px 0px;
+                    text-align: center;
+                    padding: 0 14%;
+                }
+                h4 {
+                    @include text-properties($movistar-headline-bold, #005c84, 24.31px, 120%, 700, null);
+                    margin-bottom: 0;
+                    display: inline-block;
+                    @media #{$mobile} {
+                        display: none;
+                        margin-bottom: 17px;
+                        font-size: 17.72px;
+                    }
+                }
+                h5 {
+                    margin-top: 0;
+                    @include text-properties($movistar-headline-reg, #005A83, 24.31px, 120%, 400, null);
+                    @media #{$mobile} {
+                        @include text-properties($movistar-headline-bold, #005c84, 17.72px, 120%, 700, null);
+                    }
+                }
+            }
+            strong {
+                @include text-properties('RobotoBold', #656D78, 13px, 120%, 400, null);
+            }
+            .cont-boton {
+                vertical-align: top;
+                margin-top: 7px;
+                @media (max-width: 600px) {
+                    margin-top: 10px;
+                    width: 100%;
+                }
+                .cont-btn {
+                    float: none;
+                    margin-left: auto;
+                    margin-right: auto;
+                    &.width {
+                        max-width: 260px;
+                        @media (max-width: 600px) {
+                            max-width: inherit;
+                            width: 100%;
+                        }
+                    }
+                    .btn2 {
+                        padding: 3px 23px 0px 14px;
+                        text-align: center;
+                        font-family: "RobotoBold";
+                        font-size: 11.39px;
+                        height: 51px;
+                        &:after {
+                            display: none;
+                            //right: 28px;
+                        }
+                        i {
+                            &.iconp-reenviar {
+                                font-size: 20px;
+                                margin-right: 7px;
+                                position: relative;
+                                top: 3px;
+                                @media (max-width: 600px) {
+                                    margin-right: 29px;
+                                    position: relative;
+                                    top: 8px;
+                                    left: 9px;
+                                }
+                            }
+                        }
+                    }
+                }
+                @media #{$mobile} {}
+            }
+            .no-fue-posible {
+                text-align: left;
+                @include text-properties($roboto-light, #525964, 13px, 120%, 400, null);
+                width: 100%;
+                max-width: 475px;
+                margin: 0 auto;
+                margin-top: 33px;
+                padding: 0 0 0 7%;
+                @media #{$mobile} {
+                    padding: 0;
+                    margin-top: 20px;
+                    font-size: 12px;
+                }
+                p {
+                    line-height: 24px;
+                    @media #{$mobile} {
+                        margin-bottom: 15px;
+                        font-size: 12px;
+                        padding: 0 2% 0 0;
+                        line-height: 21px;
+                    }
+                }
+                ul {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                    margin-top: 26px;
+                    margin-bottom: 29px;
+                    @media #{$mobile} {
+                        margin-top: 0px;
+                        margin-bottom: 15px;
+                    }
+                }
+                li {
+                    padding-left: 1em;
+                    text-indent: -.7em;
+                    margin-bottom: 10px;
+                    @media #{$mobile} {
+                        padding-left: 8px;
+                        text-indent: -.7em;
+                        margin-bottom: 3px;
+                    }
+                }
+                li:before {
+                    content: "• ";
+                    color: #525964;
+                    /* or whatever color you prefer */
+                }
+            }
+            .numero-transaccion {
+                @include text-properties($roboto-light, #007197, 30px, 120%, 400, null);
+                width: 100%;
+                max-width: 387px;
+                height: 48px;
+                background-color: #EBEFF5;
+                margin: 0 auto;
+                margin-top: 36px;
+                padding-top: 5px;
+                display: inline-block;
+                @media #{$mobile} {
+                    font-size: 20px;
+                    margin-top: 2px;
+                    background-color: #B6E0EB;
+                    padding-top: 14px;
+                    margin-bottom: 40px;
+}
+            }
+        }
+    }
+}
+
+.caja-blanca.comprobante-fallido {
+    margin-top: 22px;
+}

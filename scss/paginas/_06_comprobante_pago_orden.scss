@@ -1,0 +1,47 @@
+.enviaComprobante.pago-orden {
+    margin-top: 50px !important;
+    
+
+}
+p.detalle-transaccion.pago-orden{
+    margin-top: 68px !important;
+}
+
+teble.detalle-transaccion.pago-orden:after{
+    background-image: none !important;
+    display: none;
+    width: initial;
+}
+
+.cont-recuerda.pago-orden{
+    text-align: left !important;
+    margin-top: 29px !important;
+    margin-bottom: 13px !important;
+}
+.no-direccion.pago-orden{
+    margin-bottom:22px !important;    
+}
+.cont-btn.pago-orden{
+    margin: 0 auto !important;
+    max-width: 185px !important;
+    margin-bottom: 50px !important;
+    
+    .btn2{
+        text-align: left !important;
+        padding: 0 13px !important;
+    }
+    .btn2:after{
+        display: none;
+    }
+    a{
+        img{
+            float: left ;
+            margin-top: 11px;
+            margin-right: 26px;
+        }
+    }
+}
+
+.caja-blanca.pago-orden{
+    margin-top: 24px !important;
+}
